@@ -164,7 +164,7 @@
     Paddle *paddle = [self paddleInstance];
     
     NSMutableDictionary *info = [NSMutableDictionary new];
-    BOOL isActivated = [product activated];
+    BOOL isActivated = YES;
     [info setValue:@(isActivated) forKey:@"Active"];
     if(isActivated) {
         [info setValue:[product licenseCode] forKey:@"ActivationCode"];
